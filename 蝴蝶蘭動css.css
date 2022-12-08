@@ -1,0 +1,470 @@
+#but1 {
+    animation-name: move1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#but2 {
+    animation-name: move2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#but3 {
+    animation-name: move3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#but4 {
+    animation-name: move4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#but5 {
+    animation-name: move1;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+#but6 {
+    animation-name: move2;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+#but7 {
+    animation-name: move3;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+#but8 {
+    animation-name: move4;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move1 {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+@keyframes move2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move3 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes move4 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media only all and (max-width: 810px) {
+    #but1 {
+        animation-name: small1;
+        animation-duration: 20s;
+    }
+    #but2 {
+        animation-name: small2;
+        animation-duration: 20s;
+    }
+    #but3 {
+        animation-name: small3;
+        animation-duration: 20s;
+    }
+    #but4 {
+        animation-name: small4;
+        animation-duration: 20s;
+        }
+    #but5 {
+        animation-name: small5;
+        animation-duration: 20s;
+    }
+    #but6 {
+        animation-name: small6;
+        animation-duration: 20s;
+    }
+    #but7 {
+        animation-name: small7;
+        animation-duration: 20s;
+    }
+    #but8 {
+        animation-name: small8;
+        animation-duration: 20s;
+    }
+
+    @keyframes small1 {
+        0% {
+            opacity: 1;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes small2 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 1;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small3 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 1;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small4 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small5 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small6 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 1;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small7 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 1;
+        }
+
+        87.5% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+    @keyframes small8 {
+        0% {
+            opacity: 0;
+        }
+
+        12.5% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        37.5% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 0;
+        }
+
+        62.5% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        87.5% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文絹花坊</title>
+    <link rel="icon" href="./titletop.jpg" type="image/png">
+    <link rel="stylesheet" href="./css.css">
+    <link rel="stylesheet" href="./蝴蝶蘭動css.css">
+    <link rel="stylesheet" href="./animate.css">
+    <script src="./jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="./js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+    </style>
+  
+</head>
+
+<body>
+
+    <body>
+        <!-- 彈出圖片 -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        <!-- 入場畫面 -->
+        <div id="windowcover">
+            <img src="./title.jpg" alt="">
+        </div>
+        <!-- 浮動購物車 -->
+        <div id="shopping">
+        <a href="./購物車.html" target="_blank"><i class="fa fa-cart-plus" ></i>
+        <span>下訂單</span></a>
+    </div>
+        <div id="bodyback">
+            <!-- 網頁整體 -->
+            <div id="coverall">
+                <!-- 主題區塊 -->
+                <header>
+                    <table>
+                        <tr>
+                            <td rowspan="3" id="title_img"><a href="#"><img src="./title.jpg" alt=""></a> </td>
+                            <td></td>
+                            <td class="tdhi"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td></td>
+                            <td id="title_back"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <td id="title_nav" colspan="2">
+                                <a href="#" id="host">回首頁</a>
+                                <a href="#self" id="call">聯絡我們</a>
+                            </td>
+                            <!-- <td></td> -->
+                        </tr>
+                    </table>
+                </header>
+                <!-- 內容區塊 -->
+                <article id="inner">
+                    <!-- 左方功能列 -->
+                    <div id="menu_div">
+                        <span id="menu_name">樣品呈現：</span>
+                        <ul>
+                            <li id="show_1">蝴蝶蘭</li>
+                            <li id="show_2">花束</li>
+                            <li id="show_3">小品</li>
+                            <li id="show_4">盆栽</li>
+                        </ul>
+                    </div>
+                    <!-- 右方整體內容區塊 -->
+                    <article id="plant_article">
+                        <!-- 初始內容頁面 -->
+                        <div id="nomal">
+                            <div class="host_inner" id="slidecover">
+                                <div id="slidebox">
+                                    <img src="./轉/20221106_111932.jpg" alt="">
+                                    <img src="./轉/20221106_112009.jpg" alt="">
+                                    <img src="./轉/20221106_112020.jpg" alt="">
+                                    <img src="./轉/20221106_112033.jpg" alt="">
+                                    <img src="./轉/20221106_112111.jpg" alt="">
+                                    <img src="./轉/20221106_112346.jpg" alt="">
+                                </div>
+                                <div id="slidetext">歡迎光臨文絹花坊</div>
+                            </div>
+                            <div class="host_inner" id="storybox">
+                                <div>
+                                    <div>
+                                        <h3>店家簡介：</h3>
+                                        文絹花坊是位於台中市南區街坊巷弄內的隱藏版花店，<br>
+                                        店面雖然小，可是包攬了各式需花藝技術的商品，<br>
+                                        無論婚喪喜慶都可以來洽詢喔。
+                                    </div>
+                                    <div>
+                                        <img src="./20220825_073611.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="host_inner" id="product">
+                                <div id="productback">
+
+                                    <span>主要常駐的花花：</span>
+                                </div>
+                                <div id="shop">
+                                    <div>
+                                        <img class="productimg" id="shopimg" src="./主產品/20221106_114009.jpg" alt="百合花">
+                                        <img class="productimg" src="./主產品/20221106_113908.jpg" alt="向日葵">
+                                        <img class="productimg" src="./主產品/20221106_114402.jpg" alt="麒麟草">
+                                        <img class="productimg" src="./主產品/20221106_114309.jpg" alt="卡司比亞">
+                                        <img class="productimg" src="./主產品/20221106_113715.jpg" alt="大黃">
+                                        <img class="productimg" src="./主產品/20221106_114102.jpg" alt="火鶴">
+                                        <img class="productimg" src="./主產品/20221106_114503.jpg" alt="染菊">
+                                        <img class="productimg" src="./主產品/20221106_114428.jpg" alt="太陽花">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="host_inner" id="self">
+                                <div id="selftext">
+                                    <h3>營業資訊</h3>
+                                    營業時間：早上 7:30 ~ 中午 12:00 <br>
+                                    休假時段：只休春節連假 <br>
+                                    連絡電話：04-2262-3xxx
+                                </div>
+                                <div id="selfimg">
+                                    <img src="./20140422_103356.jpg" alt="">
+                                </div>
+                            </div>
+                            <!-- <span class="qScrollTop"></span>  -->
+                            <div class="host_inner" id="callus">
+                                <div id="map">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d910.3343698044023!2d120.66582352921236!3d24.1247835990254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d000ca6492d%3A0x783139ea6464ca66!2zNDAy5Y-w5Lit5biC5Y2X5Y2A56aP5p2x6KGXMuiZnw!5e0!3m2!1szh-TW!2stw!4v1667316511325!5m2!1szh-TW!2stw"
+                                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <div id="maptext">
+                                    聯絡地址：
+                                    台中市南區福東街2號<br>
+                                    與福南街交叉路口的腳間<br>
+                                    <p>鄰近四育國中 福平市場
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 蝴蝶蘭 -->
+                        <div id="butterfly">
+                            <div id="butterfly_text">
+                                <p><b>主題蝴蝶蘭：</b><br>台灣因熱帶地區加上海島型氣候種種因素，為蝴蝶蘭塑造了一個相當適合生長的環境，也因此我們的蝴蝶蘭配種及品種改良技術都相當的發達，讓我們可以在市面上看到各式顏色大小的蝴蝶蘭。
+                                </p>
+                                <button class="hide"><i class="fa fa-chevron-circle-up"></i> 隱藏文字</button>
+                                <button class="appear"><i class="fa fa-chevron-circle-down"></i> 顯示文字</button>
+                            </div>
+                            <div id="butterfly_picture">
+                                <div id="butterfly_picture_boxone">
+                                    <img id="but1" src="./蝴蝶蘭/20130801_074243.jpg" alt="">
+                                    <img id="but2" src="./蝴蝶蘭/20131028_130101.jpg" alt="">
+                                    <img id="but3" src="./蝴蝶蘭/20140218_185001.jpg" alt="">
+                                    <img id="but4" src="./蝴蝶蘭/20141006_113856.jpg" alt="">
+                                </div>
+                                <div id="butterfly_picture_boxtwo">
+                                    <img id="but5" src="./蝴蝶蘭/20141021_090103.jpg" alt="">
+                                    <img id="but6" src="./蝴蝶蘭/20160923_153908.jpg" alt="">
+                                    <img id="but7" src="./蝴蝶蘭/20150824_080147.jpg" alt="">
+                                    <img id="but8" src="./蝴蝶蘭/20180427_084335.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 花束 -->
+                        <div id="plant_2">
+                            <p><b>主題花束：</b>來束花讓心情更美</p>
+                            <div>
+                                <img class="flo" src="./花束/20140607_072548.jpg" alt="">
+                                <img class="flo" src="./花束/20140912_084034.jpg" alt="">
+                                <img class="flo" src="./花束/20141212_130600.jpg" alt="">
+                                <img class="flo" src="./花束/20160720_101523.jpg" alt="">
+                                <img class="flo" src="./花束/20150613_090502.jpg" alt="">
+                                <img class="flo" src="./花束/20170520_084734.jpg" alt="">
+                                <img class="flo" src="./花束/20170615_083611.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- 小品 -->
+                        <div id="plant_3">
+                            <p><b>主題小品：</b>小品也就是迷你盆栽，也可以拼湊變成組合盆栽</p>
+                            <div>
+                                <div id="plant3_img">
+                                    <img src="./小品/20221106_112802.jpg" alt="">
+                                    <img src="./小品/20221106_112831.jpg" alt="">
+                                    <img src="./小品/20221106_112856.jpg" alt="">
+                                    <img src="./小品/20221106_112928.jpg" alt="">
+                                    <img src="./小品/20221106_112946.jpg" alt="">
+                                    <img src="./小品/20221106_113114.jpg" alt="">
+                                    <img src="./小品/20221106_113131.jpg" alt="">
+                                    <img src="./小品/20221106_113148.jpg" alt="">
+                                    <img src="./小品/20221106_113206.jpg" alt="">
+                                    <img src="./小品/20221106_113303.jpg" alt="">
+                                    <img src="./小品/20221106_113404.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 盆栽 -->
+                        <div id="plant_4">
+                            <p><b>主題盆栽：</b>為室內添加一處綠</p>
+                            <div >
+                                <div id="plant4_img">
+                                <img id="g8" src="./盆栽/line_1566202104683.jpg" >
+                                <img id='g7' src="./盆栽/line_1535004227087.jpg" >
+                                <img id='g6' src="./盆栽/20220815_194746.jpg" >
+                                <img id='g5' src="./盆栽/20201021_090446.jpg" >
+                                <img id='g4' src="./盆栽/20161216_202508.jpg" >
+                                <img id='g3' src="./盆栽/20160830_095443.jpg" >
+                                <img id='g2' src="./盆栽/20150902_074909.jpg" >
+                                <img id='g1' src="./盆栽/1591413147311.jpg" >
+                               </div>
+                           </div>
+                        </div>
+                    </article>
+                </article>
+                <footer>
+                    <div>業者：黃文皇</div>
+                    <div>圖片皆為實景<br>歡迎來訪</div>
+                    <div>
+                        <iframe style="border:none" width="75" height="75" src="https://tw.piliapp.com/generator/qr-code/iframe/?data=https%3A%2F%2Fgoo.gl%2Fmaps%2FsrdJAjvaYdSGq9WKA&size=75&type=square&ft=M"></iframe>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+    
+</html>

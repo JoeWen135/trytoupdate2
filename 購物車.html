@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文絹花坊的購物車</title>
+    <script src="./_jq/jquery-3.6.0.js"></script>
+    <link rel="icon" href="./titletop.jpg" type="image/png">
+    <script type="text/javascript" src="./js.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+        * {
+            font-weight: 550;
+        }
+
+        body {
+            /* display: flex; */
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 220, 239);
+            align-items: center;
+            height: 100vh;
+            /* background: url(./轉/20221106_112346.jpg); */
+            background-size: 50% 50%;
+        }
+
+        header {
+            height: 13vh;
+            text-align: center;
+            line-height: 5vh;
+            padding-top: 7vh;
+            font-size: 3em;
+            background: linear-gradient(120deg, rgb(253, 128, 128), rgb(255, 210, 210));
+            color: brown;
+            text-shadow: 1px 1px 10px rgb(253, 50, 50);
+        }
+
+        nav {
+            height: 5vh;
+            background-color: rgb(254, 106, 121);
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            height: 100%;
+            width: 500px;
+            font-size: 3vh;
+            /* padding: 0.5vh 0; */
+            /* background-color: rgb(255, 0, 115); */
+            outline: none;
+        }
+
+        nav li {
+            margin: 0;
+            margin-left: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        #plan_1 {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .back {
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.441);
+        }
+
+        #coverall {
+            z-index: 2;
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* background-color: aquamarine; */
+        }
+
+        #inner {
+            /* background-color: blue;  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgb(245, 232, 168);
+            border: 3px solid white;
+            width: 30vw;
+            height: 90%;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 200%;
+            overflow: auto;
+        }
+
+        .to_2,
+        .to_3,
+        .to_4 {
+            display: none;
+        }
+
+        fieldset {
+            border-radius: 10px;
+            color: rgb(55, 55, 55);
+            border-color: rgb(45, 44, 44);
+        }
+
+        #hred+label,
+        #ored+label {
+            color: red;
+        }
+
+        #hpurple+label,
+        #opurple+label {
+            color: purple;
+        }
+
+        #hyellow+label,
+        #oyellow+label {
+            color: yellow;
+        }
+
+        input[type='text'],
+        input[type='tel'] {
+            font-size: 1em;
+            height: 1.9em;
+            width: 70%;
+            border-radius: 10px;
+            border: 1px solid gray;
+            color: rgb(93, 93, 93);
+            text-align: center;
+            box-sizing: border-box;
+            appearance: none;
+            display: block;
+            outline: 0;
+            padding: 0 1em;
+            /* text-decoration: none; */
+        }
+
+        input[type='submit'] {
+            border-radius: 5px;
+        }
+
+        #inimg {
+            /* background-color:transparent */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 30vw;
+        }
+
+        #inimg img {
+            border: solid 3px white;
+            box-shadow: 20px 20px 40px 1px rgb(255, 103, 103);
+            margin: auto 0;
+            width: 60%;
+            height: 70%;
+        }
+
+        .subt {
+            margin-top: 10px;
+        }
+
+        footer {
+            height: 5vh;
+            background-color: rgb(255, 167, 79);
+        }
+
+        @media only all and (max-width: 920px) {
+            #inner {
+                /* background-color: blue; */
+                width: 50%;
+            }
+
+            #inimg {
+                /* background-color: blueviolet; */
+                width: 50%;
+            }
+
+            form {
+                width: 80%;
+                /* height: 60%; */
+            }
+
+            /* #inimg img { */
+            /* height: 50%; */
+            /* } */
+
+        }
+
+        @media only all and (max-width: 450px) {
+            header {
+                padding-top: 2.5em;
+                font-size: 2em;
+            }
+
+            nav {
+                display: block;
+                overflow: auto;
+            }
+
+            #coverall {
+                height: 1050px;
+                display: block;
+            }
+
+            #inner {
+                width: 100%;
+                height: 550px;
+            }
+
+            form {
+                width: 80vw;
+                margin-top: 5vh;
+                height: 500px;
+            }
+
+            #inimg {
+                width: auto;
+                height: 500px;
+            }
+
+            #inimg img {
+                width: 250px;
+                height: 400px;
+            }
+
+            footer {
+                height: 50px;
+            }
+        }
+
+        @media only all and (max-width: 280px) {
+            form {
+                width: 80%;
+                height: 550px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="back"></div> -->
+    <header>文絹花坊的訂單</header>
+    <nav>
+        <ul>
+            選擇訂單：
+            <li id="plan_1" class="navc">花束</li>
+            <li id="plan_2" class="navc">蝴蝶蘭</li>
+            <li id="plan_3" class="navc">小品</li>
+            <li id="plan_4" class="navc">盆栽</li>
+        </ul>
+    </nav>
+    <div id="coverall">
+        <div id="inner">
+            <form class="to_1">
+                <fieldset>
+                    <legend>花束</legend>
+                    <span class="formse">
+                        主色調：
+                        <input type="radio" id="hred" name="hcolor"><label for="hred">紅色</label>
+                        <input type="radio" id="hyellow" name="hcolor"><label for="hyellow">黃色</label>
+                        <input type="radio" id="hpurple" name="hcolor"><label for="hpurple">紫色</label><br>
+                    </span>
+                    <span class="formse">
+                        副色調：<input type="checkbox" id="ored" name="ocolor"><label for="ored">紅色</label>
+                        <input type="checkbox" id="oyellow" name="ocolor"><label for="oyellow">黃色</label>
+                        <input type="checkbox" id="opurple" name="ocolor"><label for="opurple">紫色</label><br>
+                    </span>
+                    <label for="price">預算：</label><input type="text" id="price">
+                    <label for="use">用途：</label><input type="text" id="use">
+                </fieldset>
+                <fieldset>
+                    <legend>聯絡資料</legend>
+                    <label for="na">姓名：</label><input type="text" id="na">
+                    <label for="te">電話：</label><input type="tel" id="te">
+                    <label for="time">取貨時間：</label><input type="date" name="" id="time"><br>
+                    <input type="submit" class="subt">
+                </fieldset>
+            </form>
+            <form class="to_2">
+                <fieldset>
+                    <legend>蝴蝶蘭</legend>
+                    <label for="pname_2">蘭花名稱：</label><input type="text" id="pname_2">
+                    <label for="amo_2">顆數：</label><input type="text" id="amo_2">
+                    <span>
+                        <input type="radio" id="one" name="bt"><label for="one">單桿</label>
+                        <input type="radio" id="two" name="bt"><label for="two">雙桿</label> <br>
+                    </span>
+                </fieldset>
+                <fieldset>
+                    <legend>聯絡資料</legend>
+                    <label for="na_2">姓名：</label><input type="text" id="na_2">
+                    <label for="te_2">電話：</label><input type="tel" id="te_2">
+                    <label for="time_2">取貨時間：</label><input type="date" name="" id="time_2"><br>
+                    <input type="submit" class="subt">
+                </fieldset>
+            </form>
+            <form class="to_3">
+                <fieldset>
+                    <legend>小品</legend>
+                    <label for="pname_3">植物名稱：</label><input type="text" id="pname_3">
+                    <label for="amo_3">數量：</label><input type="text" id="amo_3">
+                </fieldset>
+                <fieldset>
+                    <legend>聯絡資料</legend>
+                    <label for="na_3">姓名：</label><input type="text" id="na_3">
+                    <label for="te_3">電話：</label><input type="tel" id="te_3">
+                    <label for="time_3">取貨時間：</label><input type="date" name="" id="time_3"><br>
+                    <input type="submit" class="subt">
+                </fieldset>
+            </form>
+            <form class="to_4">
+                <fieldset>
+                    <legend>盆栽</legend>
+                    <label for="pname_4">植物名稱：</label><input type="text" id="pname_4">
+                    <label for="amo_4">盆數：</label><input type="text" id="amo_4">
+                    <label for="inch_4">吋數：</label><input type="text" id="inch_4">
+                </fieldset>
+                <fieldset>
+                    <legend>聯絡資料</legend>
+                    <label for="na_4">姓名：</label><input type="text" id="na_4">
+                    <label for="te_4">電話：</label><input type="tel" id="te_4">
+                    <label for="time_4">取貨時間：</label><input type="date" name="" id="time_4"><br>
+                    <input type="submit" class="subt">
+                </fieldset>
+            </form>
+        </div>
+        <div id="inimg">
+            <img src="./花束/20220615_070625.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+    </footer>
+    <script>
+        $(function () {
+            var sub = document.getElementsByClassName('subt')
+            sub.onclick = () => {
+                alert('還沒開放')
+            }
+            $('#plan_1').on('click', function () {
+                $('.to_1').css('display', 'flex')
+                $('.to_2').css('display', 'none')
+                $('.to_3').css('display', 'none')
+                $('.to_4').css('display', 'none')
+            })
+            $('#plan_2').on('click', function () {
+                $('.to_1').css('display', 'none')
+                $('.to_2').css('display', 'flex')
+                $('.to_3').css('display', 'none')
+                $('.to_4').css('display', 'none')
+            })
+            $('#plan_3').on('click', function () {
+                $('.to_1').css('display', 'none')
+                $('.to_2').css('display', 'none')
+                $('.to_3').css('display', 'flex')
+                $('.to_4').css('display', 'none')
+            })
+            $('#plan_4').on('click', function () {
+                $('.to_1').css('display', 'none')
+                $('.to_2').css('display', 'none')
+                $('.to_3').css('display', 'none')
+                $('.to_4').css('display', 'flex')
+            })
+
+            $('.navc').on('click', function () {
+                $('.navc').css('background-color','transparent')
+                $(this).css('background-color', 'white')
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1403 @@
+* {
+    outline: none;
+    font-weight: 400;
+    /* z-index: 2; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#shopping {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 30;
+    transition: all 2s;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #d82987; */
+    align-items: center;
+}
+#shopping i{
+    transition: color 0.3s;
+    font-size: 120px;
+    color: rgb(168, 5, 190);
+    /* background-color: #6e7005; */
+}
+#shopping i:hover{
+    color: rgb(250, 68, 189);
+}
+#shopping span{
+    color: rgb(255, 133, 174);
+    /* background-color: #850a23; */
+    text-shadow:0px 0px 10px #ff7070;
+    font-weight: 700;
+    font-size: 1.5em;
+    position:absolute;
+    bottom: 10px;
+    right: 11px;
+}
+
+#windowcover {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+    transition: opacity 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, rgb(250, 250, 1), rgb(252, 120, 120))  */
+    background: linear-gradient(135deg, yellow, #f3ef14, greenyellow, rgb(255, 183, 1), #ff6fd6);
+    background-size: 600% 600%;
+    animation: ew 6s ease infinite;
+}
+
+@keyframes ew {
+    0% {
+        background-position: 0% 0%
+    }
+
+    50% {
+        background-position: 100% 100%
+    }
+
+    100% {
+        background-position: 0% 0%
+    }
+}
+
+#windowcover img {
+    border: outset 10px rgb(249, 219, 237);
+    box-sizing: border-box;
+    width: 45vw;
+    height: 30vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* background: linear-gradient(180deg, rgba(249, 249, 249, 0.64),rgb(243, 168, 168) ); */
+    /* background-color: rgba(245, 63, 39, 0.255); */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-image: url(./盆栽/1591413147311.jpg);
+}
+
+#bodyback {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgb(255, 249, 254))
+}
+
+#coverall {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-top: 7px solid rgb(250, 208, 208);
+    border-left: 7px solid rgb(245, 164, 164);
+    border-right: 7px solid rgb(249, 158, 158);
+    border-bottom: 7px solid rgb(245, 164, 164);
+    background-color: rgb(255, 235, 188);
+    /* background: linear-gradient(90deg,rgb(255, 235, 188),rgb(255, 188, 238)); */
+    background-image: url(./background2.jpg);
+    /* background-position: 200px 0px */
+    width: 70vw;
+    margin-top: 8px;
+    border-collapse: collapse;
+    z-index: 0;
+}
+
+/* 上方title表格 */
+header {
+    position: sticky;
+    top: 0;
+    width: 70vw;
+    z-index: 10;
+    box-shadow: 0px 30px 50px -5px #fafbf8;
+    border: none;
+    border-collapse: collapse;
+}
+
+header table {
+    border-collapse: collapse;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+#title_img {
+    width: 30%;
+    cursor: pointer;
+}
+
+#title_img img {
+    width: 100%;
+}
+
+
+#title_back {
+    height: 4vh;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(252, 96, 96);
+    background: linear-gradient(125deg, rgb(254, 174, 174), rgb(255, 0, 0), rgb(204, 0, 255));
+}
+
+#title_nav {
+    height: 5vh;
+    /* background-color: rgb(250, 7, 169); */
+    background: linear-gradient(125deg, rgb(225, 0, 255), rgb(250, 7, 169), rgb(255, 171, 171));
+    border-radius: 20px 0px 0px 20px;
+    /* background-clip: border-box; */
+}
+
+
+#title_nav a {
+    color: rgb(145, 16, 130);
+    border-radius: 7px;
+    font-size: large;
+    margin-left: 5vw;
+    padding: 1vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#title_nav a:hover {
+    background-color: plum;
+}
+
+
+/* 身體文件 */
+#inner {
+    /* border: #303130 solid 3px; */
+    display: flex;
+    position: relative;
+    /* border: #096a09 solid 3px; */
+}
+
+
+
+/* 左方導覽列 */
+
+#menu_div {
+    flex: 1;
+    border-radius: 0px 20px 20px 0px;
+    background-color: greenyellow;
+    background: linear-gradient(135deg, rgb(170, 255, 0), greenyellow, yellow);
+    height: 250px;
+    margin-top: 15vh;
+    position: sticky;
+    top: 15%;
+    z-index: 15;
+}
+
+#menu_name {
+    display: block;
+    text-align: center;
+    padding: 15px 0px;
+    color: #6e7005;
+    font-size: 1.5em;
+    border-bottom: #096a0927 10px double;
+}
+
+#menu_div ul {
+    list-style-type: square;
+}
+
+#menu_div li {
+    font-size: 20px;
+    color: #096a09;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.3s;
+    /* border: #096a09 solid 3px; */
+}
+
+#menu_div li:hover {
+    cursor: pointer;
+    background-color: rgb(186, 253, 140);
+}
+
+/* 動圖包覆層 */
+#plant_article {
+    flex: 3;
+    /* height: 2000px; */
+    z-index: 3;
+}
+
+/* 主頁 */
+#nomal {
+    width: 85%;
+    /* height: 2000px; */
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    align-items: center;
+}
+
+.host_inner {
+    border: white solid 6px;
+    background-color: #fdca79;
+    margin: 0;
+    margin-bottom: 1vh;
+    /* border: #303130 solid 2px; */
+    height: 400px;
+}
+
+/* 頁首幻燈 */
+#slidecover {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #fafbf892;
+    border: none;
+    margin-bottom: 3vh;
+    border-radius: 10px 10px 30px 30px;
+}
+
+#slidebox {
+    height: 50%;
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    /* border: #096a09 solid 1px;  */
+
+    margin: auto;
+    /*让父元素居中*/
+    width: 50px;
+    /* height: 400px;  */
+    /*声明一个3D空间*/
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg);
+    animation-name: animate;
+    animation-duration: 25s;
+    /*动画执行次数*/
+    animation-iteration-count: infinite;
+    /*动画持续时间：无限 */
+    animation-timing-function: linear;
+}
+
+#slidebox img {
+    width: 15vw;
+    position: absolute;
+    /* transform: translate(-50%); */
+    /* box-shadow: 10px 10px 0px 0px rgb(237, 100, 66); */
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: scale 0.6s;
+}
+
+#slidebox img:hover {
+    scale: 1.15;
+}
+
+#slidebox img:nth-child(1) {
+    transform: translateZ(15vw);
+}
+
+#slidebox img:nth-child(2) {
+    transform: rotateY(60deg) translateZ(15vw);
+}
+
+#slidebox img:nth-child(3) {
+    transform: rotateY(120deg) translatez(15vw);
+}
+
+#slidebox img:nth-child(4) {
+    transform: rotateY(180deg) translatez(15vw);
+}
+
+#slidebox img:nth-child(5) {
+    transform: rotateY(240deg) translatez(15vw);
+}
+
+#slidebox img:nth-child(6) {
+    transform: rotateY(300deg) translatez(15vw);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateX(10deg) rotateY(90deg);
+    }
+
+    50% {
+        transform: rotateX(0deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: rotateX(-10deg) rotateY(270deg);
+    }
+
+    100% {
+        transform: rotateX(0deg) rotateY(360deg);
+    }
+}
+
+#slidetext {
+    height: 20%;
+    background-color: #fafbf8be;
+    text-align: center;
+    font-size: 3em;
+    border-radius: 0px 0px 30px 30px;
+    animation-name: textcolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes textcolor {
+    0% {
+        color: red;
+        text-shadow: red 1px 0 10px;
+    }
+
+    6.6% {
+        color: orange;
+        text-shadow: orange 1px 0 10px;
+    }
+
+    13.2% {
+        color: yellow;
+        text-shadow: yellow 1px 0 10px;
+    }
+
+    19.8% {
+        color: yellowgreen;
+        text-shadow: yellowgreen 1px 0 10px;
+    }
+
+    26.4% {
+        color: green;
+        text-shadow: green 1px 0 10px;
+    }
+
+    33% {
+        color: blue;
+        text-shadow: blue 1px 0 10px;
+    }
+
+    39.6% {
+        color: indigo;
+        text-shadow: indigo 1px 0 10px;
+    }
+
+    46.2% {
+        color: purple;
+        text-shadow: purple 1px 0 10px;
+    }
+
+    52.8% {
+        color: indigo;
+        text-shadow: indigo 1px 0 10px;
+    }
+
+    59.4% {
+        color: blue;
+        text-shadow: blue 1px 0 10px;
+    }
+
+    66% {
+        color: green;
+        text-shadow: green 1px 0 10px;
+    }
+
+    72.6% {
+        color: yellowgreen;
+        text-shadow: yellowgreen 1px 0 10px;
+    }
+
+    79.2% {
+        color: greenyellow;
+        text-shadow: greenyellow 1px 0 10px;
+    }
+
+    85.8% {
+        color: yellow;
+        text-shadow: yellow 1px 0 10px;
+    }
+
+    92.4% {
+        color: orange;
+        text-shadow: orange 1px 0 10px;
+    }
+
+    100% {
+        color: red;
+        text-shadow: red 1px 0 10px;
+    }
+}
+
+/* 主產品 */
+
+/* width */
+#product::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+#product::-webkit-scrollbar-thumb {
+    background: rgb(251, 18, 72);
+    border-radius: 16px;
+}
+
+/* Handle on hover */
+#product::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 125, 144);
+}
+
+#product::-webkit-scrollbar-track {
+    background-color: #fafbf8;
+}
+
+#product {
+    overflow: auto;
+    height: 400px;
+    transition: height 2s;
+}
+
+#productback {
+    height: 400px;
+    background-image: url(./主產品/店面改.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 45vh;
+    transition: height 2s;
+}
+
+#product div:nth-child(1) span {
+    color: #ffffff;
+    background-color: #d82987;
+    box-shadow: 10px 10px 20px 0px #850a23;
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2s;
+}
+
+#product div:nth-child(2) {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product div:nth-child(2) div {
+    /* margin-top: 15px; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 15px;
+    /* border: #303130 solid 5px;  */
+}
+
+.productimg {
+    width: 90px;
+    border: white 6px solid;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.productimg:hover {
+    transform: scale(1.2, 1.2);
+    border: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow: auto; */
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(249, 249, 249, 0.64), rgb(245, 201, 118))
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border: white double 10px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    box-sizing: border-box;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(169, 145, 5);
+    padding: 30px 0;
+    height: 150px;
+    font-size: 2em;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    padding: 0px 15px 0px 15px;
+    border-radius: 15px;
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    color: #fefefe;
+    font-size: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #ff9797;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 介紹 */
+#storybox {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 5vh;
+}
+
+#storybox>div {
+    margin: auto;
+    height: 80%;
+    width: 90%;
+    background-color: rgb(255, 244, 230);
+    -ms-transform: skewY(2deg);
+    transform: skewY(2deg);
+    text-decoration: underline;
+    text-decoration-color: #7d7d7d84;
+    color: #855a0a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+@keyframes mai {
+    0% {
+        transform: skewY(0deg)
+    }
+
+    50% {
+        transform: skewY(2deg)
+    }
+
+    100% {
+        transform: skewY(0deg)
+    }
+}
+
+@keyframes mal {
+    0% {
+        transform: skewY(0deg)
+    }
+
+    50% {
+        transform: skewY(-2deg)
+    }
+
+    100% {
+        transform: skewY(0deg)
+    }
+}
+
+@keyframes flyaway {
+    0% {
+        transform: skewY(2deg) scale(1, 1) translate(0%, 0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: skewY(0deg) scale(0.4, 0.4) translate(-600px, -300px);
+        opacity: 0;
+    }
+}
+
+@keyframes flyback {
+    0% {
+        transform: skewY(0deg) scale(0.4, 0.4) translate(600px, -300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: skewY(2deg) scale(1, 1) translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+#storybox img {
+    height: 20vh;
+    border: white 7px dotted;
+}
+
+
+/* 頁尾聯絡 */
+
+#self {
+    height: 230px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: -20px 10px 3px 0px rgb(214, 155, 19);
+    transition: 0.5s;
+    position: relative;
+}
+
+#selftext {
+    padding: 0px 20px 20px 20px;
+    background-color: #ff9500;
+    transition: all 1s;
+    position: relative;
+}
+
+#selftext:hover {
+    bottom: 5px;
+    box-shadow: -15px 10px 0px 0px rgb(214, 155, 19);
+}
+
+#selfimg img {
+    height: 200px;
+    border: #ffffff double 5px;
+}
+
+/* 地圖 */
+.host_inner:last-child {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 20px 10px 3px 0px rgb(214, 100, 19);
+    position: relative;
+    transition: 0.3s;
+}
+
+#map {
+    /* height:100%; */
+    /* width: 40%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* border: #303130 solid 3px; */
+}
+
+#maptext {
+    /* border: #303130 solid 3px; */
+    height: auto;
+    padding: 20px;
+    background-color: #ff9500;
+    color: #0f0f0f;
+    /* text-shadow: #ff856c 1px 1px 1px ; */
+    /* width: 40%; */
+    position: relative;
+    transition: all 1s;
+}
+
+#maptext:hover {
+    box-shadow: 10px 15px 0px 0px rgb(214, 100, 19);
+    bottom: 5px;
+}
+
+/* 蝴蝶蘭 */
+/* #plant_article>div {
+    display: flex; 
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    margin-top: 70px;
+    background-color: rgb(243, 219, 85);
+    border: #6e7005 solid 4px;
+    border-radius: 20px; 
+ } */
+#butterfly,
+#plant_2,
+#plant_3,
+#plant_4 {
+    width: 80%;
+    height: 69vh;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: rgb(251, 224, 86);
+    border: #f6a903 solid 4px;
+    border-radius: 20px;
+    display: none;
+    animation-name: flower;
+    animation-duration: 1s;
+}
+
+@keyframes flower {
+    0% {
+        transform: scale(1)
+    }
+
+    25% {
+        transform: scale(1.05)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+#butterfly_text {
+    margin: 15px;
+    padding: 0vh 1vw;
+}
+
+#butterfly_picture {
+    display: flex;
+    justify-content: center;
+}
+
+#butterfly_picture div {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+}
+
+#butterfly img {
+    position: absolute;
+    width: 12vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #303130;
+}
+
+.hide,
+.appear {
+    border-radius: 8px;
+    display: none;
+    border: none;
+    padding: 2px 5px;
+    transition: 0.3s;
+}
+
+.hide:hover,
+.appear:hover {
+    background-color: #fbb106;
+}
+
+.hide i,
+.appear i {
+    color: #a36e0a;
+}
+
+
+/* 花束 */
+
+#plant_2 p {
+    padding: 0vh 1vw;
+}
+
+#plant_2 div {
+    height: 56vh;
+    width: 35vw;
+    overflow: hidden;
+    /* border: #303130 solid 1px;   */
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 11px 0px;
+
+}
+
+#plant_2 div img {
+    position: relative;
+    right: 0vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #303130;
+    width: 15.5vw;
+    transition: all 1s
+        /* ease-out; */
+}
+
+/* 小品 */
+
+#plant_3>p {
+    padding: 0vh 1vw;
+}
+
+#plant_3>div {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 80%;
+    background-color: #ffdf9b;
+    box-shadow: inset 0 0 15px rgb(250, 154, 0);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plant3_img {
+    /* margin-top: 5vh; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    height: 80%;
+    width: 400px;
+    display: flex;
+    overflow: auto;
+    border-radius: 20px;
+    padding: 0px 0px 1vh 0px;
+}
+
+#plant_3 img {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* width */
+#plant3_img::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+#plant3_img::-webkit-scrollbar-thumb {
+    background: rgb(251, 185, 18);
+    border-radius: 16px;
+}
+
+/* Handle on hover */
+#plant3_img::-webkit-scrollbar-thumb:hover {
+    background: rgb(130, 84, 4);
+}
+
+#plant_4>div {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70%;
+    width: 80%;
+    /* background-color: #ffdf9b;
+    box-shadow: inset 0 0 15px rgb(250, 154, 0);
+    border-radius: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plant4_img {
+    position: relative;
+    /* border: #096a09 solid 3px; */
+    height: 80%;
+    width: 400px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* overflow: hidden; */
+    border-radius: 20px;
+    padding: 0px 0px 1vh 0px;
+    cursor: pointer;
+}
+
+#plant_4>p {
+    padding: 0vh 1vw;
+}
+
+#plant4_img img {
+    /* filter: blur(5px); */
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 160px;
+    position: absolute;
+    border-radius: 10px;
+    border: white solid 3px;
+    transition-property: all;
+    transition-duration: 1s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#plant4_img img:nth-child(8){
+    transform: rotate(-40deg) translate(-8vw, 0%);
+}
+#plant4_img img:nth-child(7){
+    transform: rotate(-20deg) translate(-6vw, 0%);
+}
+#plant4_img img:nth-child(5){
+    transform: rotate(20deg) translate(6vw, 0%);
+}
+#plant4_img img:nth-child(4){
+    transform: rotate(40deg) translate(8vw, 0%);
+}
+
+footer {
+
+    /* box-shadow: inset #ff8d61 0px 10px 50px 10px; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+footer div {
+    flex: 1;
+    font-size: 1em;
+    color: #6e7005;
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(180deg, yellow, greenyellow);
+    background-size: 600% 600%;
+    animation: cross 5s ease infinite;
+    /* border: #096a09 solid 3px; */
+}
+
+/* footer div:nth-child(2){
+    border-left: #4d9718 1px double;
+    border-right: #4d9718 1px double;
+} */
+@keyframes cross {
+    0% {
+        background-position: 0% 0%;
+        box-shadow: inset rgb(237, 255, 75) 0px 0px 20px 10px
+    }
+
+    50% {
+        background-position: 100% 100%;
+        box-shadow: inset rgb(163, 242, 45) 0px 0px 20px 10px
+    }
+
+    100% {
+        background-position: 0% 0%;
+        box-shadow: inset rgb(237, 255, 75) 0px 0px 20px 10px
+    }
+}
+
+@media only all and (max-width: 810px) {
+    #windowcover img {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    #coverall {
+        width: 100vw;
+        border: none;
+        margin-top: 0px;
+        background-position: 0px 90px;
+    }
+
+    header {
+        position: static;
+        width: 100vw;
+        /* border: #303130 solid 3px; */
+    }
+
+    header table {
+        height: 15vh;
+    }
+
+    #title_img {
+        width: 50%;
+    }
+
+    /* 中 */
+    #inner {
+        display: block;
+        margin-top: 0;
+    }
+
+    /* 左方導覽  現為上方*/
+    #menu_div {
+        border-radius: 30px 0px 0px 40px;
+        background-color: #9FFF10;
+        height: 5vh;
+        width: 100vw;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0vh;
+        /* border: #303130 solid 3px; */
+    }
+
+    #menu_name {
+        font-size: large;
+        padding: 1vh 0px 0px 0px;
+        border: none;
+    }
+
+    #menu_div ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #menu_div li {
+        font-size: medium;
+        padding: 1.3vh 2vw 1vh 2vw;
+    }
+
+    /* 動圖包覆層 主內容 */
+    /* #plant_article>div {
+        /* margin-top: 6vh; */
+    /* }  */
+
+    /* 蘭花 */
+    #butterfly,
+    #plant_2,
+    #plant_3,
+    #plant_4 {
+        height: 55vh;
+        box-sizing: border-box;
+        margin-bottom: 7vh;
+        margin-top: 7vh;
+    }
+
+    footer {
+        height: 11vh;
+    }
+
+    #butterfly_picture div {
+        /* border: #303130 solid 3px; */
+        margin-top: 10px;
+    }
+
+    #butterfly img {
+        width: 32vw;
+    }
+
+    .hide {
+        display: inline;
+    }
+
+    /* 花束*/
+
+    #plant_2 div {
+        height: 35vh;
+        width: 68.2vw;
+    }
+
+    #plant_2 div img {
+        width: 34vw;
+        margin-right: 0;
+        margin-left: 0;
+        box-shadow: none;
+    }
+
+    /* 小品 */
+    #plant_3>div {
+        /* border: #303130 solid 3px;  */
+        height: 75%;
+        margin-top: 0;
+        /* width: 240px; */
+    }
+
+    /* 頁首 */
+    #slidecover {
+        height: 35vh;
+    }
+
+    #slidebox img {
+        width: 30vw;
+    }
+
+    #slidetext {
+        font-size: 2em;
+    }
+
+    #slidebox img:nth-child(1) {
+        transform: translateZ(30vw);
+    }
+
+    #slidebox img:nth-child(2) {
+        transform: rotateY(60deg) translateZ(30vw);
+    }
+
+    #slidebox img:nth-child(3) {
+        transform: rotateY(120deg) translatez(30vw);
+    }
+
+    #slidebox img:nth-child(4) {
+        transform: rotateY(180deg) translatez(30vw);
+    }
+
+    #slidebox img:nth-child(5) {
+        transform: rotateY(240deg) translatez(30vw);
+    }
+
+    #slidebox img:nth-child(6) {
+        transform: rotateY(300deg) translatez(30vw);
+    }
+
+    /* 主產品 */
+    #product div:nth-child(2) div {
+        grid-template-columns: auto auto auto;
+    }
+
+    /* 頁尾 */
+    #self {
+        height: 60vh;
+        box-shadow: none;
+    }
+
+    .host_inner:last-child {
+        box-shadow: none;
+        height: 60vh;
+        /* 介紹 */
+    }
+
+    #storybox {
+        height: 60vh;
+    }
+
+    #storybox>div {
+        display: block;
+        width: 80%;
+    }
+
+    #storybox img {
+        margin: 2vh 1vw;
+    }
+}
+
+@media only all and (max-width: 450px) {
+    #shopping i{
+        font-size: 50px;
+        color: #fe7bc1;
+    }
+    #shopping span{
+        font-size: 20px;
+        color: #850a23;
+    }
+
+    #title_nav a {
+        margin-left: 10px;
+        /* border: #096a09 3px solid;  */
+    }
+
+    #butterfly img {
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    #product div:nth-child(2) div {
+        grid-template-columns: auto auto;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .close {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        padding: 0px 10px 0px 10px;
+
+    }
+
+    #menu_name~ul {
+        display: none;
+    }
+
+    #menu_name:hover~ul,
+    #menu_name~ul:hover {
+        display: block;
+    }
+
+    #menu_name {
+        display: block;
+        font-size: large;
+        padding: 0.5vh 0px 0.6vh 20px;
+        border: none;
+        color: #096a09;
+        text-align: start
+            /* border: #096a09 1px solid; */
+    }
+
+    #menu_div {
+        display: block;
+    }
+
+    #menu_div ul {
+        list-style-type: none;
+        display: none;
+        height: 5vh;
+        background-color: #ffff10;
+        border-radius: 20px 0px 0px 20px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    #menu_div li {
+        display: inline-block;
+        /* border: #6a3109 1px solid; */
+        font-size: medium;
+        padding: 1vh 2vw 1vh 2vw;
+        color: rgb(144, 144, 38);
+        margin-left: 25px;
+    }
+
+    #menu_div li:hover {
+        background-color: #ffffa4;
+    }
+
+    footer div:nth-child(3) {
+        padding-top: 0px;
+    }
+
+    #plant4_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #plant4_img img {
+        margin-top: 20px;
+        width: 126px;
+        height: 190px;
+    }
+}
+
+@media only all and (max-width: 280px) {
+    #coverall {
+        background-position: 0px 90px
+    }
+
+    #title_back {
+        height: 15px;
+        /* border: #096a09 solid 1px; */
+    }
+
+    #title_nav {
+        height: 30px;
+    }
+
+    #title_nav a {
+        margin-left: 10px;
+        font-size: 14px;
+        /* border: #096a09 3px solid;  */
+    }
+
+    #menu_name {
+        font-size: medium;
+    }
+
+    #menu_div li {
+        margin-left: 5px;
+    }
+
+    #product div:nth-child(1) span {
+        font-size: 1em;
+    }
+
+    #butterfly img {
+        width: 60vw;
+        /* margin-left: -40px; */
+    }
+
+    #plant_2 div {
+        width: 90%;
+        height: 42%;
+    }
+
+    #plant_2 div img {
+        width: 50%;
+    }
+
+    #plant_3>div {
+        width: 190px;
+        /* padding: 10%; */
+    }
+
+    #slidecover {
+        height: 150px;
+    }
+
+    #slidetext {
+        font-size: 1.5em;
+    }
+
+    #slidebox img:nth-child(1) {
+        transform: translateZ(80px);
+    }
+
+    #slidebox img:nth-child(2) {
+        transform: rotateY(60deg) translateZ(80px);
+    }
+
+    #slidebox img:nth-child(3) {
+        transform: rotateY(120deg) translatez(80px);
+    }
+
+    #slidebox img:nth-child(4) {
+        transform: rotateY(180deg) translatez(80px);
+    }
+
+    #slidebox img:nth-child(5) {
+        transform: rotateY(240deg) translatez(80px);
+    }
+
+    #slidebox img:nth-child(6) {
+        transform: rotateY(300deg) translatez(80px);
+    }
+
+    #plant4_img img {
+        margin-top: 20px;
+        width: 120px;
+        height: 190px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+    /* .host_inner {
+        display: block;
+    } */
+
+    /* #maptext{
+        height: auto;
+    } */
+}
